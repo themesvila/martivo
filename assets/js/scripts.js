@@ -2,8 +2,8 @@
 	"use strict";  
 
 	/*Preloader js */
-		$('.preloader_wrap').delay(400).fadeOut('slow');
-		$('.preloader_wrap').delay(350).fadeOut('slow'); 
+	$('.preloader_wrap').delay(400).fadeOut('slow');
+	$('.preloader_wrap').delay(350).fadeOut('slow'); 
 	
 	jQuery(document).ready(function($) {
 					
@@ -27,7 +27,34 @@
 		/*Video Popup*/
 		jQuery(".vbtn").YouTubePopUp();
 		
-		/*Counter */
+
+			var swiper = new Swiper(".feature_slider", {
+			slidesPerView: 4,
+			spaceBetween: 30,
+			loop: true,
+			centeredSlides: true,
+			pagination: {
+				el: ".feature-pagination",
+				clickable: true,
+			},
+			navigation: {
+				nextEl: "",
+				prevEl: "",
+			},
+			breakpoints: {
+				0: {
+					slidesPerView: 1
+				},
+				768: {
+					slidesPerView: 2
+				},
+				1024: {
+					slidesPerView: 4
+				}
+			}
+		});
+
+		/*Counter*/
 		$('.counter_up').on('inview', function(event, visible, visiblePartX, visiblePartY) {
 			if (visible) {
 				$(this).find('span.count').each(function () {
@@ -141,39 +168,6 @@
 		},
 	});
 
-	
-	// Activity Slider
-	const activity_slider = new Swiper(".activity_slider", {
-		slidesPerView: 4,
-		spaceBetween: 20,
-		loop: true,
-		// Responsive breakpoints
-		breakpoints: {
-			1299: {
-				slidesPerView: 4,
-			},
-			1199: {
-				slidesPerView: 3,
-			},					
-			1024: {
-				slidesPerView: 3,
-			},
-			991: {
-				slidesPerView: 2,
-			},			
-
-			767: {
-				slidesPerView: 2,
-			},
-			480: {
-				slidesPerView: 2,
-			},		
-			0: {
-				slidesPerView: 1,
-			},
-		},
-	});
-
 
 	//Clients
 	$('.clients_slider').owlCarousel({
@@ -202,29 +196,29 @@
 		}
 	});
 
-		//------------- DETAIL ADD - MINUS COUNT ORDER -------------//
-		$(".btn-number").on("click", function () {
+	//------------- DETAIL ADD - MINUS COUNT ORDER -------------//
+	$(".btn-number").on("click", function () {
 
-			var $button = $(this);
-			var oldValue = $button.closest('.quantity_option').find("input.quntity-input").val();
+		var $button = $(this);
+		var oldValue = $button.closest('.quantity_option').find("input.quntity-input").val();
 
-			if ($button.text() == "+") {
-				var newVal = parseFloat(oldValue) + 1;
+		if ($button.text() == "+") {
+			var newVal = parseFloat(oldValue) + 1;
+		} else {
+			// Don't allow decrementing below zero
+			if (oldValue > 0) {
+				var newVal = parseFloat(oldValue) - 1;
 			} else {
-				// Don't allow decrementing below zero
-				if (oldValue > 0) {
-					var newVal = parseFloat(oldValue) - 1;
-				} else {
-					newVal = 0;
-				}
+				newVal = 0;
 			}
+		}
 
-			$button.closest('.quantity_option').find("input.quntity-input").val(newVal);
+		$button.closest('.quantity_option').find("input.quntity-input").val(newVal);
 
-		});
-		
-		/* Nice Select */
-		jQuery('select').niceSelect();
+	});
+	
+	/* Nice Select */
+	jQuery('select').niceSelect();
 
 		
 	/* WOW */

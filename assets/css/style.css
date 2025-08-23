@@ -91,7 +91,7 @@ a:focus{
 	display: block;
 }
 .section-heading span {
-	font-size: 16px;
+	font-size: 15px;
 	color: var(--orange);
 	font-weight: 600;
 	text-transform: uppercase;
@@ -102,7 +102,7 @@ a:focus{
 	display: block;
 	color: var(--title);
 	margin-bottom: 7px;
-	font-size: 35px;
+	font-size: 32px;
 }
 .gray_section{
 	background-color: var(--gray);
@@ -761,7 +761,7 @@ a:focus{
 	margin-bottom: 15px;
 }
 .feature_item h3{
-	font-size: 24px;
+	font-size: 20px;
 }
 .feature_item p{
 	margin-bottom: 0;
@@ -843,7 +843,7 @@ a:focus{
 
 }
 .program_content h3 {
-	font-size: 24px;
+	font-size: 22px;
 	margin-bottom: 15px;
 }
 .program_content p {
@@ -907,7 +907,136 @@ a:focus{
 	border-color: var(--orange);
 }
 
+/*
+* ----------------------------------------------------------------------------------------
+* Events
+* ----------------------------------------------------------------------------------------
+*/
 
+.event_img{
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+	position: relative;
+	margin-bottom: 35px;
+	background-size: cover;
+	background-position: center center;
+}
+.event_img::before{
+	width: 225px;
+	height: 225px;
+	border: 1px dashed var(--dc);
+	border-radius: 50%;
+	content: '';
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}
+.event_content h4{
+	font-size: 20px;
+}
+.event_content h4 a{
+	color:var(--title);
+}
+.event_content h4 a:hover{
+	color:var(--orange);
+}
+.event_content p{
+	margin-bottom: 0;
+}
+.event_content span{
+	color: var(--orange)
+}
+
+/*
+* ----------------------------------------------------------------------------------------
+* Team
+* ----------------------------------------------------------------------------------------
+*/
+.team_item {
+	position: relative;
+	border-radius: 15px;
+	border: 1px solid var(--dc);
+	padding: 35px 0;
+}
+.team_img{
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+	overflow: hidden;
+	background-size: cover;
+	background-repeat: no-repeat;
+	display: inline-block;
+	margin-bottom: 15px;
+	position: relative;
+	transition: .5s;
+}
+.team_img ul {
+	position: absolute;
+	left: 0;
+	top:-50%;
+	padding-left: 0;
+	margin: 0;
+	z-index: 99;
+	width: 100%;
+	opacity: 0;
+	transition: .5s;
+}
+.team_img ul li {
+	display: inline-block;
+	margin: 0 5px;
+}
+.team_img ul li a{
+	color: var(--white);
+	display: inline-block;
+	width: 28px;
+	height: 28px;
+	line-height: 28px;
+	border-radius: 50%;
+	background: var(--title);
+	font-size: 14px;
+}
+.team_img ul li a:hover{
+	color: var(--white);
+	background: var(--orange);
+}	
+.team_img:after{
+	content: '';
+	width: 95%;
+	height: 95%;
+	background-color: var(--white);
+	position:absolute;
+	left: 0;
+	top:-50%;
+	border-radius: 50%;
+	opacity: 0;
+	transition: .5s;
+}
+.team_item:hover .team_img:after{
+	opacity: .9;
+	top:50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+.team_item:hover .team_img ul {
+	opacity: 1;
+	top:50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+.team_item p{
+	margin-bottom: 0;
+}
+.team_item h3{
+	font-size: 20px;
+	margin-bottom: 5px;
+}
+.team_item p{
+	font-size: 14px;
+	color: var(--orange);
+	text-transform: uppercase;
+}
 /*
 * ----------------------------------------------------------------------------------------
 * Shopping Cart

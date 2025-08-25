@@ -1296,7 +1296,23 @@ a:focus{
 * Start Footer
 * ----------------------------------------------------------------------------------------
 */
-
+.foot_logo{
+	width: 150px;
+	margin-bottom: 15px;
+	display: block;
+}
+.footer_widget{
+	margin-bottom: 30px;
+}
+.footer_widget a:hover{
+	color: var(--orange);
+}
+.footer_widget ul {
+	padding-left: 0;
+	margin-bottom: 0;
+	list-style-type: none;
+	line-height: 34px;
+}
 .social_link{
 	list-style-type: none;
 	padding-left: 0;
@@ -1318,6 +1334,11 @@ a:focus{
 	background: var(--white);
 	display: block;
 	text-align: center;
+	transition: .5s;
+}
+.social_link li a:hover{
+	background: var(--orange);
+	color: var(--white);
 }
 .mar_footer{
 	background: var(--footer);
@@ -1327,7 +1348,7 @@ a:focus{
 	z-index: 1;
 }
 .footer-title{
-	font-size: 18px;
+	font-size: 17px;
 	color: var(--white);
 	margin-bottom: 25px;
 	position: relative;
@@ -1336,6 +1357,15 @@ a:focus{
 .mar_footer a{
 	color: var(--white);
 	transition: .5s;
+}
+.footer_contact p{
+	display: flex;
+	gap: 15px;
+}
+.footer_contact i{
+	font-size: 24px;
+	color: var(--orange);
+	align-self: center;
 }
 #newsletter_form input[type=email]{
 	width: 100%;
@@ -1364,7 +1394,31 @@ a:focus{
 	width: 100%;
 	border-radius: 4px;
 }
-
+.dwhite{
+	background-color: rgba(215,216,222,0.2);
+}
+.mar_copyright p{
+	margin-bottom: 0;
+}
+.footer_stars {
+	left: 7px;
+	top: 45px;
+	width: 72px;
+}
+.footer_fdots {
+	right: 53%;
+	bottom: 105px;
+	width: 90px;
+}
+.footer_fcircle {
+	right: 30px;
+	top: 92px;
+	width: 40px;
+}
+.footer_arrowsup {
+	right: 33px;
+	bottom: 100px;
+}
 
 /*
 * ----------------------------------------------------------------------------------------

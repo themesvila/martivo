@@ -24,10 +24,11 @@
 			$(".offcanvas__overlay").addClass("overlay-open");
 		});
 
-		/*Video Popup*/
-		jQuery(".vbtn").YouTubePopUp();
+		// Slider Start //
 		
 
+		/*Video Popup*/
+		jQuery(".vbtn").YouTubePopUp();
 			var swiper = new Swiper(".feature_slider", {
 			slidesPerView: 4,
 			spaceBetween: 30,

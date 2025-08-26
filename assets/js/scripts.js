@@ -26,6 +26,50 @@
 
 		// Slider Start //
 		
+		var homeSlider = new Swiper('.mar_slider', {
+			// Optional parameters
+			slidesPerView: 1,
+			spaceBetween: 30,
+			loop: true,
+			// Navigation arrows
+			navigation: {
+				nextEl: '.hs_next_arrow',
+				prevEl: '.hs_prev_arrow',		
+			},
+			pagination: {
+				clickable: false,
+			},
+			effect: "fade",
+			fadeEffect: { crossFade: true },
+			autoplay: {
+				delay: 8000,
+				disableOnInteraction: false,
+			},
+			breakpoints: {
+				1299: {
+					slidesPerView: 1,
+				},
+				1199: {
+					slidesPerView: 1,
+				},					
+				1024: {
+					slidesPerView: 1,
+				},
+				991: {
+					slidesPerView: 1,
+				},			
+
+				767: {
+					slidesPerView: 1,
+				},
+				575: {
+					slidesPerView: 1,
+				},
+				0: {
+					slidesPerView: 1,
+				},
+			},
+		});
 
 		/*Video Popup*/
 		jQuery(".vbtn").YouTubePopUp();

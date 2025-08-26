@@ -30,7 +30,7 @@
 	text-align: center;
 	line-height: 49px;
 	font-size: 19px;
-	color: var(--blue);
+	color: var(--orange);
 	left: 0;
 	top: 0;
 	height: 46px;
@@ -51,7 +51,7 @@
 	line-height: 49px;
 	font-size: 19px;
 	opacity: 0;
-	background-image: linear-gradient(298deg, var(--blue), var(--blue));
+	background-image: linear-gradient(298deg, var(--orange), var(--orange));
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 	left: 0;
@@ -70,7 +70,7 @@
 	fill: none; 
 }
 .progress-wrap svg.progress-circle path {
-	stroke: var(--blue);
+	stroke: var(--orange);
 	stroke-width: 4;
 	box-sizing:border-box;
 	-webkit-transition: all 200ms linear;

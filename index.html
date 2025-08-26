@@ -26,7 +26,7 @@
 
     <body>
 	
-		<!-- Offcanvas Area Start 
+		<!-- Offcanvas Area Start--> 
 		<div class="fix-area">
 			<div class="offcanvas__info">
 				<div class="offcanvas__wrapper">
@@ -50,13 +50,13 @@
 		</div>
 		
 		<div class="offcanvas__overlay"></div>
-		Start Header -->
+		<!-- Start Header -->
 	
 		<!-- Start Header -->
 		<header id="mar_header" class="navbar position-absolute top-0 start-0 w-100 z-3">
-			<div class="container-xxl container-fluid">
-				<div class="site_logo d-inline-block">
-					<a href="index.html"><img src="assets/img/logo.svg" alt="Tourin"></a>	
+			<div class="container">
+				<div class="site_logo d-inline-block my-auto">
+					<a href="index.html"><img src="assets/img/logo-white.svg" alt="Tourin"></a>	
 				</div>
 				
 				<nav class="main-menu  align-self-center">
@@ -64,7 +64,7 @@
 						<li><a href="index.html">Home</a></li>
 						<li><a href="about.html">About</a></li>
 						<li><a href="about.html">Programs</a></li>
-						<li><a href="#">Pages <i class="fa-solid fa-chevron-down"></i></a>
+						<li class="has-child-items"><a href="#">Pages <i class="fa-solid fa-chevron-down"></i></a>
 							<ul class="sub-menu">
 								<li><a href="about.html">About</a></li>
 								<li><a href="blog.html">Blog List</a></li>
@@ -81,8 +81,12 @@
 						<li><a href="contact.html">Contact</a></li>
 					</ul>
 				</nav>
-			
-				
+
+				<div class="header__hamburger d-xl-none my-auto">
+					<div class="sidebar__toggle">
+						<i class="ph ph-list"></i>
+					</div>
+				</div>		
 			</div>
 		</header>
 		<!-- End Header -->
@@ -100,7 +104,7 @@
 									Martial Arts
 								</h1>
 								<p class="active_animation">Join our expert instructors and transform your life with professional martial <br> arts  training.  Suitable for all ages and skill levels, our programs focus</p>
-								<a href="#" class="main_btn white_btn active_animation"><span>Explore More <i class="ph ph-arrow-right"></i></span></a>
+								<a href="#" class="main_btn active_animation"><span>Explore More <i class="ph ph-arrow-right"></i></span></a>
 								<ul class="slider_social active_animation">
 									<li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
 									<li><a href="#"><i class="fa-brands fa-x-twitter"></i></a></li>
@@ -109,23 +113,26 @@
 								</ul>
 							</div>
 
-							<div class="slider_image position-absolute end-0 bottom-0 text-end">
+							<div class="slider_image active_animation position-absolute end-0 bottom-0 text-end">
 								<img src="assets/img/slider/image1.png" alt="img">
 								<img src="assets/img/slider/shape1.png" alt="img" class="sshape_1 position-absolute">
 								<img src="assets/img/slider/shape2.png" alt="img" class="sshape_2 position-absolute">
 								<a class="vbtn" href="https://www.youtube.com/watch?v=c4PQfgq2NsQ"><img src="assets/img/slider/vbtn.png" alt="img" ></a>
 							</div>
-						</div><!--End Slide -->
+						</div>
+					</div>
+					<!-- End swiper-slide -->
 
+					<div class="swiper-slide">
 						<div class="slider_item">
 							<div class="container">
 								<h1 class="heading active_animation">
-									<span>Empowering Mind, Body</span><br> 
-									And Spirit Through<br>  
-									Martial Arts
+									<span>Unleash Your Strength</span><br>
+									Master the Art of<br>
+									Self-Discipline
 								</h1>
 								<p class="active_animation">Join our expert instructors and transform your life with professional martial <br> arts  training.  Suitable for all ages and skill levels, our programs focus</p>
-								<a href="#" class="main_btn white_btn active_animation"><span>Explore More <i class="ph ph-arrow-right"></i></span></a>
+								<a href="#" class="main_btn active_animation"><span>Explore More <i class="ph ph-arrow-right"></i></span></a>
 								<ul class="slider_social active_animation">
 									<li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
 									<li><a href="#"><i class="fa-brands fa-x-twitter"></i></a></li>
@@ -134,18 +141,21 @@
 								</ul>
 							</div>
 
-							<div class="slider_image position-absolute end-0 bottom-0 text-end">
-								<img src="assets/img/slider/image1.png" alt="img">
+							<div class="slider_image active_animation position-absolute end-0 bottom-0 text-end">
+								<img src="assets/img/slider/image2.png" alt="img">
 								<img src="assets/img/slider/shape1.png" alt="img" class="sshape_1 position-absolute">
 								<img src="assets/img/slider/shape2.png" alt="img" class="sshape_2 position-absolute">
 								<a class="vbtn" href="https://www.youtube.com/watch?v=c4PQfgq2NsQ"><img src="assets/img/slider/vbtn.png" alt="img" ></a>
 							</div>
-						</div><!--End Slide -->
+						</div>
 					</div><!-- End swiper-slide -->
+
 				</div>
-				
-				<div class="hs_prev_arrow harrow"><i class="ph ph-caret-left"></i></div>
-				<div class="hs_next_arrow harrow"><i class="ph ph-caret-right"></i></div>
+
+				<div class="harrows">
+					<div class="hs_prev_arrow"><img src="assets/img/shapes/left-arrow.svg" alt=""></div>
+					<div class="hs_next_arrow"><img src="assets/img/shapes/right-arrow.svg" alt=""></div>
+				</div>
 			</div>
 		</section>
 		<!-- End Slider -->
@@ -154,7 +164,7 @@
 		 <section class="about-us section-padding" style="background-image:url(assets/img/bg/about.jpg);">
 			<div class="container">	
 				<div class="row g-5">
-					<div class="col-lg-6 col-md-6 col-12 align-self-center">
+					<div class="col-lg-6 col-md-6 col-12 align-self-center wow fadeInLeft" data-wow-delay="0.3s">
 						<div class="about_image position-relative">
 							<img src="assets/img/about/about.png" alt="img">
 							<img src="assets/img/about/shape1.svg" alt="img" class="abshape_1 position-absolute">
@@ -162,7 +172,7 @@
 						</div>
 					</div><!-- End Col -->
 
-					<div class="col-lg-6 col-md-6 col-12 align-self-center">
+					<div class="col-lg-6 col-md-6 col-12 align-self-center wow fadeInRight" data-wow-delay="0.3s">
 						<div class="about_content">
 							<div class="section-heading">
 								<span class="sub_title">About Us</span>
@@ -189,7 +199,7 @@
 		<!-- End About Section -->
 
 		<!--Start Features -->
-		<section class="features pb100">
+		<section class="features pb100 wow fadeInUp" data-wow-delay="0.3s">
 			<div class="container">
 				<div class="feature_slider">
 					<div class="swiper-wrapper">
@@ -252,7 +262,7 @@
 		<!-- Start Programs -->
 		<section class="programs section-padding" style="background-image:url(assets/img/bg/programs.jpg);">
 			<div class="container">
-				<div class="section-heading text-center">
+				<div class="section-heading text-center wow fadeInUp" data-wow-delay="0.3s">
 					<span class="sub_title">Our Programs</span>
 					<h2>Elevate your mind, body, and <br> spirit here</h2>
 					<img src="assets/img/shapes/title.svg" alt="img">
@@ -262,14 +272,14 @@
 					<div class="col-lg-6 col-12">
 						<div class="program_item text-start">
 							<div class="row">
-								<div class="col-lg-6 col-md-6 col-12 align-self-center">
+								<div class="col-lg-6 col-md-6 col-12 align-self-center wow fadeInUp" data-wow-delay="0.3s">
 									<div class="program-image">
 										<div class="pnumber">01</div>
 										<img src="assets/img/programs/1.jpg" alt="img">
 									</div>
 								</div><!-- End Col -->
 
-								<div class="col-lg-6 col-md-6 col-12 align-self-center">
+								<div class="col-lg-6 col-md-6 col-12 align-self-center wow fadeInUp" data-wow-delay="0.3s">
 									<div class="program_content">
 										<h3>Dojo Training</h3>
 										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam venenatis imperdiet tortor sodales vulputate.</p>
@@ -280,7 +290,7 @@
 						</div>
 					</div><!-- End Col -->
 
-					<div class="col-lg-6 col-12">
+					<div class="col-lg-6 col-12 wow fadeInUp" data-wow-delay="0.3s">
 						<div class="program_item text-start">
 							<div class="row">
 								<div class="col-lg-6 col-md-6 col-12 align-self-center">
@@ -301,7 +311,7 @@
 						</div>
 					</div><!-- End Col -->
 
-					<div class="col-lg-6 col-12">
+					<div class="col-lg-6 col-12 wow fadeInUp" data-wow-delay="0.3s">
 						<div class="program_item text-start">
 							<div class="row">
 								<div class="col-lg-6 col-md-6 col-12 align-self-center">
@@ -321,7 +331,7 @@
 						</div>
 					</div><!-- End Col -->
 
-					<div class="col-lg-6 col-12">
+					<div class="col-lg-6 col-12 wow fadeInUp" data-wow-delay="0.3s">
 						<div class="program_item text-start">
 							<div class="row">
 								<div class="col-lg-6 col-md-6 col-12 align-self-center">
@@ -348,7 +358,7 @@
 		<!-- Start Pricing -->
 		<section class="pricing section-padding">
 			<div class="container">
-				<div class="section-heading text-center">
+				<div class="section-heading text-center wow fadeInUp" data-wow-delay="0.3s">
 					<span class="sub_title">Pricing Plans</span>
 					<h2>Best Plan for Your <br>
 					Martial Arts Programs</h2>
@@ -357,7 +367,7 @@
 
 				<div class="row">
 					<div class="col-12">
-						<div class="pricing_item">
+						<div class="pricing_item wow fadeInUp" data-wow-delay="0.3s">
 							<div class="row">
 								<div class="col-xl-3 text-center align-self-center">
 									<h3>Basic Plan</h3>	
@@ -383,7 +393,7 @@
 							</div>
 						</div><!-- End Pricing Item -->	
 
-						<div class="pricing_item active">
+						<div class="pricing_item active wow fadeInUp" data-wow-delay="0.3s">
 							<div class="row">
 								<div class="col-xl-3 text-center align-self-center">
 									<h3>Premium Plan</h3>
@@ -409,7 +419,7 @@
 							</div>
 						</div><!-- End Pricing Item -->	
 
-						<div class="pricing_item">
+						<div class="pricing_item wow fadeInUp" data-wow-delay="0.3s">
 							<div class="row">
 								<div class="col-xl-3 text-center align-self-center">
 									<h3>Standard Plan</h3>
@@ -445,14 +455,14 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-xl-4 align-self-center">
-						<div class="section-heading text-start mb-0">
+						<div class="section-heading text-start mb-0 wow fadeInUp" data-wow-delay="0.3s">
 							<span class="sub_title">Events</span>
 							<h2>Learn from the best martial arts instructors around</h2>			
 							<a href="#" class="main_btn mt-4">Choose Plan <i class="ph ph-arrow-right"></i></a>
 						</div>						
 					</div><!--End Col-->
 
-					<div class="col-xl-8 align-self-center">
+					<div class="col-xl-8 align-self-center wow fadeInUp" data-wow-delay="0.3s">
 						<div class="event_slider">
 							<div class="swiper-wrapper">
 								<div class="event_item swiper-slide">
@@ -509,14 +519,14 @@
 		<!-- Start Team -->
 		<section class="team pb100" style="background-image:url(assets/img/bg/team.jpg);">
 			<div class="container">
-				<div class="section-heading text-center">
+				<div class="section-heading text-center wow fadeInUp" data-wow-delay="0.3s">
 					<span class="sub_title">Our Team</span>
 					<h2>Learn from expert martial <br> arts masters</h2>
 					<img src="assets/img/shapes/title.svg" alt="img">
 				</div>
 
 				<div class="row">
-					<div class="col-lg-3 col-md-6 col-12">
+					<div class="col-lg-3 col-md-6 col-12 wow fadeInUp" data-wow-delay="0.3s">
 						<div class="team_item text-center">
 							<div class="team_img" style="background-image: url(assets/img/team/1.jpg);">
 								<ul>
@@ -530,7 +540,7 @@
 						</div>
 					</div><!-- End Col -->
 
-					<div class="col-lg-3 col-md-6 col-12">
+					<div class="col-lg-3 col-md-6 col-12 wow fadeInUp" data-wow-delay="0.3s">
 						<div class="team_item text-center">
 							<div class="team_img" style="background-image: url(assets/img/team/2.jpg);">
 								<ul>
@@ -544,7 +554,7 @@
 						</div>
 					</div><!-- End Col -->
 
-					<div class="col-lg-3 col-md-6 col-12">
+					<div class="col-lg-3 col-md-6 col-12 wow fadeInUp" data-wow-delay="0.3s">
 						<div class="team_item text-center">
 							<div class="team_img" style="background-image: url(assets/img/team/3.jpg);">
 								<ul>
@@ -558,7 +568,7 @@
 						</div>
 					</div><!-- End Col -->
 
-					<div class="col-lg-3 col-md-6 col-12">
+					<div class="col-lg-3 col-md-6 col-12 wow fadeInUp" data-wow-delay="0.3s">
 						<div class="team_item text-center">
 							<div class="team_img" style="background-image: url(assets/img/team/4.jpg);">
 								<ul>
@@ -579,13 +589,13 @@
 		<!--Start Testimonial -->
 		<section class="testimonial section-padding" style="background-image:url(assets/img/bg/testimonials.jpg);">
 			<div class="container">
-				<div class="section-heading text-center">
+				<div class="section-heading text-center wow fadeInUp" data-wow-delay="0.3s">
 					<span class="sub_title">Testimonials</span>
 					<h2 class="text-white">Start your martial arts journey <br> with us!</h2>
 					<img src="assets/img/shapes/title.svg" alt="img">
 				</div>
 
-				<div class="testimonial_images">
+				<div class="testimonial_images wow fadeInUp" data-wow-delay="0.3s">
 					<div class="swiper-wrapper">
 						<div class="swiper-slide">
 							<img src="assets/img/testimonials/1.jpg" alt="img">
@@ -613,7 +623,7 @@
 					</div>
 				</div><!-- End Testimonials images --> 
 
-				<div class="testimonial_slider">
+				<div class="testimonial_slider wow fadeInUp" data-wow-delay="0.3s">
 					<div class="swiper-wrapper">
 						<div class="testimonial_item swiper-slide text-center">
 							<p>
@@ -694,28 +704,28 @@
 		<section class="counterup section-padding position-relative">
 			<div class="container position-relative">
 				<div class="row g-0 counterup_inner">
-					<div class="col-lg-3 col-md-6 col-12">
+					<div class="col-lg-3 col-md-6 col-12 wow fadeInUp" data-wow-delay="0.3s">
 						<div class="counter_item text-center">
 							<h3><span class="counter">1500</span>+</h3>
 							<p>Happy Students</p>
 						</div>
 					</div><!-- End Col -->
 
-					<div class="col-lg-3 col-md-6 col-12">
+					<div class="col-lg-3 col-md-6 col-12 wow fadeInUp" data-wow-delay="0.3s">
 						<div class="counter_item text-center">
 							<h3><span class="counter">250</span>+</h3>
 							<p>Expert Trainers</p>
 						</div>
 					</div><!-- End Col -->
 
-					<div class="col-lg-3 col-md-6 col-12">
+					<div class="col-lg-3 col-md-6 col-12 wow fadeInUp" data-wow-delay="0.3s">
 						<div class="counter_item text-center">
 							<h3><span class="counter">50</span>+</h3>
 							<p>Martial Arts Programs</p>
 						</div>
 					</div><!-- End Col -->
 
-					<div class="col-lg-3 col-md-6 col-12">
+					<div class="col-lg-3 col-md-6 col-12 wow fadeInUp" data-wow-delay="0.3s">
 						<div class="counter_item border-0 text-center">
 							<h3><span class="counter">100</span>+</h3>
 							<p>Awards Won</p>
@@ -730,14 +740,14 @@
 		<!-- Start Blog -->
 		<section class="blog pb100">
 			<div class="container">
-				<div class="section-heading text-center">
+				<div class="section-heading text-center wow fadeInUp" data-wow-delay="0.3s">
 					<span class="sub_title">Latest News</span>
 					<h2>Read our latest news & articles <br> about martial arts</h2>
 					<img src="assets/img/shapes/title.svg" alt="img">
 				</div>
 
 				<div class="row">
-					<div class="col-lg-6 col-md-6 col-12">
+					<div class="col-lg-6 col-md-6 col-12 wow fadeInUp" data-wow-delay="0.3s">
 						<div class="blog_item">
 							<div class="row">
 								<div class="col-xl-6 align-self-center">
@@ -761,7 +771,7 @@
 						</div>
 					</div><!-- End Col -->
 
-					<div class="col-lg-6 col-md-6 col-12">
+					<div class="col-lg-6 col-md-6 col-12 wow fadeInUp" data-wow-delay="0.3s">
 						<div class="blog_item">
 							<div class="row">
 								<div class="col-xl-6 align-self-center">
@@ -785,7 +795,7 @@
 						</div>
 					</div><!-- End Col -->
 					
-					<div class="col-lg-6 col-md-6 col-12">
+					<div class="col-lg-6 col-md-6 col-12 wow fadeInUp" data-wow-delay="0.3s">
 						<div class="blog_item">
 							<div class="row">
 								<div class="col-xl-6 align-self-center">
@@ -809,7 +819,7 @@
 						</div>
 					</div><!-- End Col -->	
 					
-					<div class="col-lg-6 col-md-6 col-12">
+					<div class="col-lg-6 col-md-6 col-12 wow fadeInUp" data-wow-delay="0.3s">
 						<div class="blog_item">
 							<div class="row">
 								<div class="col-xl-6 align-self-center">
@@ -838,7 +848,7 @@
 		<!-- End Blog -->
 
 		<!-- Start Clients -->
-		<section class="clients">
+		<section class="clients wow fadeInUp" data-wow-delay="0.3s">
 			<div class="container">
 				<div class="divider"></div>
 				<div class="client_slider">
@@ -876,7 +886,7 @@
 		<footer class="mar_footer wow fadeIn">
 			<div class="container">
 				<div class="row mb-4">
-					<div class="col-lg-3 col-md-4 col-12">
+					<div class="col-lg-3 col-md-4 col-12 wow fadeInUp" data-wow-delay="0.3s">
 						<div class="footer_about mb-md-0 mb-5">
 							<a href="#" class="foot_logo"><img src="assets/img/logo-white.svg" alt="img"></a>
 							<p>
@@ -893,7 +903,7 @@
 						</div>
 					</div><!-- End Col -->
 
-					<div class="col-xl-3 col-lg-4 col-md-6 col-12">
+					<div class="col-xl-3 col-lg-4 col-md-6 col-12 wow fadeInUp" data-wow-delay="0.3s">
 						<div class="footer_widget">
 							<h3 class="footer-title">About Martivo</h3>
 							<ul>
@@ -906,7 +916,7 @@
 						</div>	
 					</div><!-- End Col -->
 
-					<div class="col-xl-3 col-lg-4 col-md-6 col-12">
+					<div class="col-xl-3 col-lg-4 col-md-6 col-12 wow fadeInUp" data-wow-delay="0.3s">
 						<div class="footer_widget">
 							<h3 class="footer-title">Quick Contact</h3>
 							<div class="footer_contact">										
@@ -928,7 +938,7 @@
 						</div>
 					</div><!-- End Col -->
 					
-					<div class="col-xl-3 col-lg-4 col-md-6 col-12">
+					<div class="col-xl-3 col-lg-4 col-md-6 col-12 wow fadeInUp" data-wow-delay="0.3s">
 						<div class="footer_widget">
 							<h3 class="footer-title">Subscribe To Newsletter</h3>
 							<div id="newsletter_form">
@@ -941,6 +951,7 @@
 						</div>
 					</div><!-- End Col -->
 				</div><!-- End Row -->
+				
 				<div class="row">
 					<div class="col-12">
 						<div class="divider dwhite mb-4"></div>

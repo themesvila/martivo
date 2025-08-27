@@ -73,7 +73,9 @@
 
 		/*Video Popup*/
 		jQuery(".vbtn").YouTubePopUp();
-			var swiper = new Swiper(".feature_slider", {
+
+		/*Feature Slider*/
+		var swiper = new Swiper(".feature_slider", {
 			slidesPerView: 4,
 			spaceBetween: 30,
 			loop: true,
@@ -87,15 +89,31 @@
 				prevEl: "",
 			},
 			breakpoints: {
-				0: {
-					slidesPerView: 1
+				1400: {
+					slidesPerView: 4,
 				},
-				768: {
-					slidesPerView: 2
+				1299: {
+					slidesPerView: 3,
 				},
+				1199: {
+					slidesPerView: 3,
+				},					
 				1024: {
-					slidesPerView: 4
-				}
+					slidesPerView: 3,
+				},
+				991: {
+					slidesPerView: 2,
+				},			
+
+				767: {
+					slidesPerView: 2,
+				},
+				575: {
+					slidesPerView: 2,
+				},
+				0: {
+					slidesPerView: 1,
+				},
 			}
 		});
 
@@ -117,48 +135,6 @@
 		});				
 	});		
 
-	// Mar Slider
-	const mar_slider = new Swiper('.mar_slider', {
-		// Optional parameters
-		slidesPerView: 1,
-		spaceBetween: 30,
-		loop: true,
-		// Navigation arrows
-		navigation: {
-			nextEl: '.hs_next_arrow',
-			prevEl: '.hs_prev_arrow',		
-		},
-		pagination: {
-			el: ".hero_pagination",
-			clickable: true,
-		},
-		effect: "fade",
-		breakpoints: {
-			1299: {
-				slidesPerView: 1,
-			},
-			1199: {
-				slidesPerView: 1,
-			},					
-			1024: {
-				slidesPerView: 1,
-			},
-			991: {
-				slidesPerView: 1,
-			},			
-
-			767: {
-				slidesPerView: 1,
-			},
-			575: {
-				slidesPerView: 1,
-			},
-			0: {
-				slidesPerView: 1,
-			},
-		},
-	});
-	
 
  // Student Images (thumbnails)
 	var testimonialImages = new Swiper('.testimonial_images', {
@@ -166,7 +142,34 @@
 		slidesPerView: 5,
 		spaceBetween: 30,
 		centeredSlides: true,
-		slideToClickedSlide: true
+		slideToClickedSlide: true,
+			breakpoints: {
+			1400: {
+				slidesPerView: 5,
+			},
+			1299: {
+				slidesPerView: 4,
+			},
+			1199: {
+				slidesPerView: 4,
+			},					
+			1024: {
+				slidesPerView: 3,
+			},
+			991: {
+				slidesPerView: 3,
+			},			
+
+			767: {
+				slidesPerView: 3,
+			},
+			575: {
+				slidesPerView: 3,
+			},
+			0: {
+				slidesPerView: 3,
+			},
+		}
 	});
 
   // Student Testimonials (text)
@@ -235,6 +238,33 @@
 			el: ".swiper-pagination",
 			clickable: true,
 		},
+		breakpoints: {
+			1400: {
+				slidesPerView: 3,
+			},
+			1299: {
+				slidesPerView: 3,
+			},
+			1199: {
+				slidesPerView: 3,
+			},					
+			1024: {
+				slidesPerView: 3,
+			},
+			991: {
+				slidesPerView: 3,
+			},			
+
+			767: {
+				slidesPerView: 3,
+			},
+			575: {
+				slidesPerView: 2,
+			},
+			0: {
+				slidesPerView: 1,
+			}
+		}	
 	});
 
 	//------------- Client Slider -------------//

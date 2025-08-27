@@ -147,7 +147,7 @@ a:focus{
 
 .main_btn {
 	background: var(--orange);
-	padding: 10px 12px 10px 19px;
+	padding: 13px 16px 13px 18px;
 	border-radius: 30px;
 	color: var(--white);
 	display: inline-block;
@@ -792,10 +792,8 @@ a:focus{
 */
 .programs{
 	position: relative;
-	background-repeat: no-repeat;
-	background-size: cover;
+	background-color: var(--red2);
 	z-index: 1;
-	margin: -1px 0;
 }
 .programs::after{
 	content: '';
@@ -803,6 +801,7 @@ a:focus{
 	width: 100%;
 	height: 100%;
 	background-image: url('../img/bg/prog_overlay.png');
+	background-color: rgba(250, 250, 250, .96);
 	background-repeat: no-repeat;
 	background-size: cover;
 	left: 0;
@@ -1194,13 +1193,15 @@ a:focus{
 * Start Blog
 * ----------------------------------------------------------------------------------------
 */
-.blog_item{
-	margin-bottom:30px ;	
+.blog_item{	
 }
 .blog_img{
 	border: 2px dashed var(--dd);
 	border-radius: 15px;
 	padding: 12px;
+}
+.blog_img img{
+	width: 100%;
 }
 .blog_img,
 .program-image {

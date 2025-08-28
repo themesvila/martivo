@@ -742,6 +742,7 @@ a:focus{
 }
 .feature_item.swiper-slide-active{
 	box-shadow: 0 14px 27px rgba(0, 0, 0, 0.03);
+	border-color: var(--orange);
 }
 .feature_item img{
 	width: 60px;
@@ -932,7 +933,7 @@ a:focus{
 .event_img::before{
 	width: 225px;
 	height: 225px;
-	border: 1px dashed var(--dc);
+	border: 2px dashed var(--dc);
 	border-radius: 50%;
 	content: '';
 	position: absolute;
@@ -1858,3 +1859,51 @@ a.pthumb{
 * End Checkout Page
 * ----------------------------------------------------------------------------------------
 */
+
+/* ----------------------------------------------------------------------------------------
+* Main Banner
+* ----------------------------------------------------------------------------------------
+*/
+
+.main_banner {
+	position: relative;
+	background-size: cover;
+	background-position: center center;
+	z-index: 1;
+	color: var(--white);
+	padding: 190px 0 100px;
+	background-size: cover;
+}
+
+.main_banner::after {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: #000;
+	opacity: .6;
+	z-index: -1;
+	width: 100%;
+	height: 100%;
+}
+
+.main_banner h1{
+	color: var(--white);
+	text-transform: capitalize;
+}
+.main_banner p {
+	margin-bottom: 0;
+	background: var(--blue);
+	display: inline-block;
+	padding: 4px 18px;
+	border-radius: 30px;
+	font-size: 14px;
+}
+.main_banner a{
+	display: inline-block;
+}
+.main_banner p i {
+	top: 2px;
+	position: relative;
+}
+

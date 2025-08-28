@@ -75,6 +75,9 @@
 		border: inherit;
 		padding: 10px;
 	}
+	.counter_item h3 {
+		font-size: 30px;
+	}
 	.counterup_inner{
 		padding-bottom: 25px;
 	}
@@ -88,7 +91,11 @@
 	
 	.event_slider{
 	}
+	.counterup_inner{
+		margin: 0 15px;
+	}
 }
+
 /* For screens 534px */
 @media (max-width: 534px) {
 	.pricing_item ul {
